@@ -15,3 +15,5 @@ deploy:
   username: "MallaBishal"
   password: "Deloitte#123"
   site: "dockerreact"
+  on:
+    branch: master
