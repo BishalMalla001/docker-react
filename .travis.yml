@@ -11,9 +11,9 @@ script:
   - docker run -e CI=true mallabishal/docker-react npm run test
 
 deploy:
-  provider: azure_web_apps
-  username: "MallaBishal"
-  password: "Deloitte#123"
-  site: "dockerreact"
-  on:
-    branch: master
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "docker-react"
+  env: "Dockerreact-env"
+  bucket_name: "elasticbeanstalk-us-east-2-338257658451"
+  bucket_path: "docker-react"
